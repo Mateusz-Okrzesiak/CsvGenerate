@@ -1,0 +1,23 @@
+﻿@model CsvGenerate.Models.Person
+
+
+
+    @if (Model.Name != "" && Model.Name != null)
+    {
+        <span>
+            @Html.DisplayFor(model => Model.Name)
+        </span>
+
+        <span>
+            @Html.DisplayFor(model => Model.LastName)
+        </span>
+
+        <span>
+            @Html.DisplayFor(model => Model.DateOfBirth, "{0:dd-MMM-yyyy}")
+        </span>
+
+        <span>
+            @Html.DisplayFor(model => Model.Color)
+        </span>
+        <br/>
+    }
